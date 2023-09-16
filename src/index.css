@@ -1,0 +1,11 @@
+:root{
+ --body_background: white;
+ --body_color: black;
+ --link_color: rgba(65, 62, 62, 0.939);
+}
+
+[data-theme = "dark"]{
+  --body_background: #282c34;
+  --body_color: white;
+  --link_color: rgb(0, 0, 0);
+}

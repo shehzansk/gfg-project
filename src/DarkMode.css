@@ -1,0 +1,108 @@
+.dark_mode {
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.dark_mode_label {
+    width: 65px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: #a1a1a1;
+    padding: 0 2px 0 2px;
+    border: 2px solid;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dark_mode_label:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 180px;
+    transition: 0.3s;
+}
+.dark_mode_input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.dark_mode_input:checked + .dark_mode_label {
+    background: #cdcdcde1;
+}
+.dark_mode_input:checked + .dark_mode_label:after {
+    left: 62px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+.dark_mode_label:active:after {
+    width: 30px;
+}
+
+.dark_mode_label img {
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    z-index: 100;
+}
+.dark_mode_label img.sun {
+    left: 5px;
+    fill: #fff;
+    transition: 0.3s;
+}
+.dark_mode_label img.moon {
+    left: 40px;
+    width: 22px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+}
+.dark_mode_input:checked + .dark_mode_label svg.sun {
+    fill: #7e7e7e;
+}
+.dark_mode_input:checked + .dark_mode_label svg.moon {
+    fill: #fff;
+}
+.dark_mode_label img{
+    width: 20px;
+}
+
+@media (max-width: 780px) {
+
+
+.dark_mode_label {
+    width: 40px;
+    height: 18px;
+}
+.dark_mode_label:after {
+    width: 15px;
+    height: 15px;
+    top: 1.5px;
+    left: 3.3px;
+}
+
+.dark_mode_input:checked + .dark_mode_label:after {
+    left: 38px;
+   
+}
+.dark_mode_label:active:after {
+    width: 20px;
+}
+
+.dark_mode_label img {
+    width: 13px;
+    top: 2px;
+}
+.dark_mode_label img.sun {
+    left: 4px;
+}
+.dark_mode_label img.moon {
+    left: 24px;
+    width: 14px;
+}
+
+
+}

@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: var(--body_color);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-decoration: none;
+
+  
+}
+html{
+  background: url("./image-people.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dark{
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 30px;
+  background-color: rgb(220, 220, 220);
+  box-shadow: 0 4px 6px rgba(27, 27, 27, 0.498);
+  position: fixed;
+  width: 97vw;
+}
+ul{
+  list-style: none;
+  display: flex;
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-size: 1.25rem;
+}
+li{
+  margin-right: 35px;
+}
+li a{
+  color: var(--link_color);
+  font-weight: 600;
+}
+#logo{
+  display: flex;
+  justify-content: center;
+}
+
+.Links{display: flex;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.Links div{
+  margin-top: 1px;
+  margin-left: -5px;
+}
+#icon1{
+  width: 60px;
+  height: 60px;
+  padding: 7px 0px 0px 30px;
+  cursor: pointer;
+}
+#icon2{
+  width: 65px;
+  height: 33px;
+  margin-top: -3px;
+  cursor: pointer;
+}
+#flexBox{
+  display: flex;
+  justify-content: center;
+}
+
+#flexpeople{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("./image-people.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 98vw;
+  
+  
+}
+#flexpeople div{
+  margin-left: 75px;
+  
+}
+#people-1{
+  color:white;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+#people-2{
+  color:white;
+  font-size: 40px;
+  
+}
+
+#people-3{
+  margin-top: 15px;
+  padding-top: 30px;
+  color:white;
+  font-size: 35px;
+  word-spacing: 10px;
+}
+
+@keyframes spin_words{
+
+
+10% {
+    transform: translateY(-105%);
+}
+
+32% {
+    transform: translateY(-100%);
+}
+
+43% {
+    transform: translateY(-205%);
+}
+
+65% {
+    transform: translateY(-200%);
+}
+
+75% {
+    transform: translateY(-305%);
+}
+
+100% {
+    transform: translateY(-300%);
+}
+}
+#animatedBox{
+  display: flex;
+  margin: 100px 0 0 50px;
+}
+#animatedBox h1{
+  font-size: 50px;
+}
+.animated{
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.2) 4px 4px 5px;
+    overflow: hidden;
+    height: 63px;
+    padding: 2px;
+    margin-top: 65px;
+}
+
+.animated .text1{
+  color: rgb(40, 142, 70);
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: 8s ease 0s infinite normal none running spin_words;
+    margin-left: 10px;
+  }
+
+  #animatedDis{
+text-align: left;
+width: 500px;
+margin-left: 60px;
+font-size: 20px;
+margin-top: 15px;
+  }
+#getus{
+  margin-top: 100px;
+  font-size: 3.4rem;
+  font-weight: bolder;
+  word-spacing: 5px;
+}
+
+#domain div{
+  margin-top: 30px;
+}
+#domain div img{
+  height: 250px;
+  width: 550px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+#image-text-container1{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#image-text-container1 p {
+  font-size: 28px;
+  text-align: right;
+  margin-right: 13px;
+  margin-left: 13px;
+  padding: 15px 10px 10px 15px;
+  border-radius: 0px 10px 10px 0px;
+  
+}
+
+#image-text-container1 img{
+  width: 530px;
+  height: 370px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+#image-text-container1 #image-text1{
+  width: 450px;
+  height: 370px;
+}
+#image-text-container1 #image-text2{
+  width: 450px;
+  height: 500px;
+}
+#image-text-container1 #image-text3{
+  width: 500px;
+  height: 350px;
+  margin-right: 30px;
+}
+
+#image-text-container1 div{
+  width: 45%;
+  display: flex;
+  align-self: center;
+}
+
+
+
+#image-text-container1 #image-text-container1-p1 {
+  text-align: left;
+  border-radius: 10px 0 0 10px;
+  padding-left: 8px;
+  border-right: 0px;
+}
+
+
+.footer{
+  background: url("./footer.png");
+  padding-top: 30px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  color:black
+}
+#footer-flex{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 60vw;
+  margin-left: 25px;
+  color:black
+}
+#footer-flex div hr{
+  height: 85px;
+  margin-top: -10px;
+  border:1px solid black;
+}
+#footer-flex div {
+ 
+  color: black;
+}
+#social{
+  font-size: 15px;
+  font-weight: bold;
+  color:black
+}
+
+.footer #flex-box{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer hr{
+  width: 75%;
+  margin: 0 auto; 
+}
+.footer div{
+  text-align: center;
+  padding-bottom: 15px;
+}
+.footer #flexBox{
+  margin-top: 25px;
+  font-size: 17px;
+  color:black
+}
+.footer #flexBox p{
+ font-weight: bold;
+}
+#social img{
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 15px;
+
+}
+.footer a{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  margin-top: 10px;
+}
+.footer .footer-right{
+  margin-right: 100px;
+  color:black
+}
+
+/* -> Adding the media query for screens with a maximum width of 768px (mobile devices) */
+@media (max-width: 780px) {
+  .navBar {
+    flex-direction: column; 
+    height: auto; 
+    align-items: center; 
+  }
+  
+  ul {
+    padding: 0;
+    margin-top: 9px;
+    margin-right: 10px;
+    font-size: 0.7rem;
+    display: flex; 
+    justify-content: space-between;
+    }
+  
+  #icon1{
+    height: 17px;
+    width: 30px;
+    margin-left: -50px;
+    margin-bottom: 3px;
+  }  
+  li {
+    margin: 10px 15px;
+  }
+
+  .Links {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .Links div{
+    margin-top: -3px;
+    margin-left: 0px;
+  }
+ 
+  #animatedBox{
+    display: flex;
+    margin: 100px 0 0 50px;
+  }
+  #animatedBox h1{
+    font-size: 25px;
+  }
+  .animated{
+      font-size: 25px;
+      margin-top: 30px;
+      height: 35px;
+    
+  }
+  
+  
+  
+    #animatedDis{
+ 
+  font-size: 10px;
+    }
+  #getus{
+    font-size: 1.8rem;
+  }
+  #domain #flexBox{
+    flex-direction: column;
+    margin-left: 100px;
+  }
+  #domain #flexBox img{
+    height: 125px;
+    width: 275px
+  }
+  #flexpeople{
+    background: rgb(87, 87, 87);
+    height: 100vh;
+    width: 98vw;
+    
+    
+  }
+  #image-text-container1 div{
+    width: 100%;
+  }
+  #image-text-container1{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+
+  }
+  #image-text-container1 #image-text1{
+    width: 250px;
+    height: 200px;
+    
+    margin-left: 100px;
+  }
+  #image-text-container1 #image-text2{
+    width: 250px;
+    height:250px;
+    
+    margin-left: 100px;
+  }
+  #image-text-container1 #image-text3{
+    width: 200px;
+    height: 170px;
+    margin-left: 100px;
+  }
+  
+  #image-text-container1 #image-text1{
+    width: 280px;
+    height: 230px;
+  }
+  #image-text-container1 p{
+    font-size: 20px;
+  }
+  #image-text-container1 hr{
+    height: 200px;
+    width: 25px;
+  }
+  #image-text-container1 #image-text-container1-hr1{
+    height: 270px;
+    width: 40px;
+  }
+  #image-text-container1 #image-text-container1-hr{
+    height: 300px;
+    width: 50px;
+  }
+
+  .four-circle-container{
+    margin-top: 25px;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .four-circle-container .circle-shape{
+    height: 125px;
+    width: 125px;
+    margin-left: 120px;
+    margin-top: 50px;
+    }
+  .four-circle-container .circle-shape .circle-shape-content{
+    font-size: 45px;
+}
+.four-circle-container .circle-shape .circle-shape-content1{
+  font-size: 40px;
+}
+#technology-container hr {
+  margin: 0 30px 0 30px; 
+}
+
+#technology-container p{
+  font-size: 25px;
+}
+#technology-container-end{
+  font-size: 16px;
+}
+#firstBox{
+  height: 100px;
+  width: 120px;
+}
+
+#firstBox img{
+  height:50px;
+  width: 50px;
+}
+#firstBox hr{
+  width: 55%;
+  margin: 0 auto;
+  height: 4px;
+  margin-top: -11px;
+}
+#firstBox p{
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.footer{
+  font-size: 12px;
+}
+.footer #flex-box-inside{
+  font-size: 18px;
+}
+#address{
+  margin-right: 10px;
+
+}
+.social-container .shape{
+  width: 30px;
+  height: 20px;
+  margin-right: -10px;
+}
+#social-image{
+  height: 15px;
+  width: 15px;
+}
+.social-container {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+#footerImage{
+  height: 30px;
+  margin-right: 6px;
+}
+#footerImage2{
+  height: 22px;
+  margin-right: 7px;
+}
+}
+
+
